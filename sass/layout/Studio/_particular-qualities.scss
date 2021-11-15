@@ -1,0 +1,27 @@
+.qualities {
+  display: flex;
+}
+
+.qualities__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.qualities__box {
+  @extend %DFlex;
+  padding: 25px 0;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.qualities__title {
+  margin-bottom: 10px;
+  @include font(700, 14px, 1.14, 0.03em);  
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.qualities__text {
+  min-width: 270px;
+  @include font(400, 14px, 1.71, 0.03em);  
+}

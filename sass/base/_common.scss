@@ -1,11 +1,15 @@
-body {
-  font-family: Roboto, sans-serif;
-  margin-top: 80px;
-  color: #757575;
-  background-color: #ffffff;
-  font-size: 1.71;
-  font-style: normal;
+@media screen and (max-width: 767px) {
+  body {
+    font-family: Roboto, sans-serif;  
+    color: #757575;
+    background-color: #ffffff;  
+    font-style: normal;
+  }
 }
+
+// body {  
+//   margin-top: 80px;  
+// }
 
 h1,
 h2,

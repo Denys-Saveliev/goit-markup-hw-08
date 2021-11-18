@@ -1,4 +1,12 @@
-.navigation {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }  
 }
 
+
+
+// .navigation {
+//   display: flex;
+// }

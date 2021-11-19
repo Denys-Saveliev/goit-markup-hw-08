@@ -1,32 +1,33 @@
-@media screen and (max-width: 767px) {
-  .logo {
-    display: inline-block;
-    font-family: Raleway;
-    text-decoration: none;
-    @include font(700, 24px, 1.16, 0.03em);  
-    color: $accent-color;
-  }
+.logo {
+  display: inline-block;
+  font-family: Raleway;
+  text-decoration: none;
+  @include font(700, 24px, 1.16, 0.03em);  
+  color: $accent-color;
 
-  .logo--indent {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    box-sizing: content-box;             
-  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;  
+    @include font(700, 26px, 1.19, 0.03em);
+  }  
 }
 
+.logo--indent {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-sizing: content-box;
+    
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
 
-// .logo {
-//   display: inline-block;  
-//   @include font(700, 26px, 1.19, 0.03em);
-// }
-
-
-
-// .logo--indent {
-//   padding-top: 24px;
-//   padding-bottom: 25px;
-//   margin-right: 93px;  
-// }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px; 
+  }
+}
 
 .logo--black {
     color: #000000;

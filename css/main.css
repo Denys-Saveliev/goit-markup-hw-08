@@ -832,7 +832,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -927,7 +927,7 @@ img {
 .community__list {
   box-sizing: content-box;
   font-weight: 500;
-  font-size: 4vw;
+  font-size: 3vw;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;

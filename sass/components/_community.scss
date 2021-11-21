@@ -4,7 +4,7 @@
 
 .community__list {    
     box-sizing: content-box;    
-    @include font(500, 4vw, 1.22, 0.02em);
+    @include font(500, 3vw, 1.22, 0.02em);
     color: $accent-color;
 
     &:not(:last-child) {

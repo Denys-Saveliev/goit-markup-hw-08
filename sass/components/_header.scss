@@ -1,17 +1,14 @@
 .header {
-  position: fixed;
+  @media screen and (min-width: 768px) {
+    position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
-  width: 100%;//   
+  width: 100%; 
+  background-color: $hero-text-color;  
+  }  
 
   &__border {
     border-bottom: 1px solid #ececec;
   }
-}
-
-
-.header__container {
-  display: flex;
-  align-items: center;
 }

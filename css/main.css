@@ -285,12 +285,16 @@ summary {
   display: list-item;
 }
 
-@media screen and (max-width: 767px) {
+body {
+  font-family: Roboto, sans-serif;
+  color: #757575;
+  background-color: #ffffff;
+  font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
   body {
-    font-family: Roboto, sans-serif;
-    color: #757575;
-    background-color: #ffffff;
-    font-style: normal;
+    margin-top: 80px;
   }
 }
 
@@ -313,21 +317,19 @@ img {
   height: auto;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
+@media screen and (min-width: 768px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #ffffff;
+  }
 }
 
 .header__border {
   border-bottom: 1px solid #ececec;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
 }
 
 .navigation {
@@ -397,16 +399,13 @@ img {
   .auth-nav {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 21px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .auth-nav {
-    display: flex;
+    flex-direction: row;
     margin-left: auto;
-    align-items: center;
   }
 }
 
@@ -419,6 +418,7 @@ img {
 @media screen and (min-width: 1200px) {
   .auth-nav__item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -430,6 +430,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .auth-nav__link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.16;
@@ -439,8 +441,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .auth-nav__link {
-    display: flex;
-    align-items: center;
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
@@ -453,24 +453,51 @@ img {
   color: #2196f3;
 }
 
-.auth-nav__icon {
+.auth-nav__icon--first,
+.auth-nav__icon--second {
   fill: currentColor;
 }
 
 @media screen and (min-width: 768px) {
-  .auth-nav__icon {
+  .auth-nav__icon--first {
     margin-right: 8px;
+    width: 14px;
+    height: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .auth-nav__icon {
+  .auth-nav__icon--first {
     margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav__icon--second {
+    margin-right: 8px;
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__icon--second {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
   }
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .container {
@@ -564,6 +591,7 @@ img {
 }
 
 .btn {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -1011,6 +1039,7 @@ img {
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -1085,28 +1114,41 @@ img {
 
 .hero {
   margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  padding: 118px 0;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/hero/mobile/hero.jpg");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1600px;
-  padding: 200px 0;
-  text-align: center;
-  background-color: var(--hero-footer-bg-color);
+  background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
+  text-align: center;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero__btn {
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding: 10px 32px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

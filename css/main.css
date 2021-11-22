@@ -628,6 +628,7 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .social--bg:hover, .social--bg:focus {
@@ -652,6 +653,30 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    text-align: start;
+    margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
 .contacts {
   margin: 20px 0 60px;
   font-size: 14px;
@@ -659,8 +684,20 @@ img {
   font-style: normal;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-bottom: 0;
+  }
+}
+
 .contacts__item:not(:last-child) {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__link {
@@ -682,6 +719,13 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    text-align: start;
+    margin-right: 93px;
+  }
+}
+
 .wrapper__title {
   font-style: normal;
   text-transform: uppercase;
@@ -697,8 +741,21 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-bottom: 0;
+  }
+}
+
 .join__item:not(:last-child) {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .sign {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .sign__box {
@@ -717,6 +774,12 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .sign__label {
+    text-align: start;
+  }
+}
+
 .sign__input {
   margin-bottom: 20px;
   height: 50px;
@@ -726,6 +789,21 @@ img {
   border-radius: 4px;
   outline: none;
   background-color: #2f303a;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .sign__input {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign__input {
+    min-width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .sign__input::placeholder {

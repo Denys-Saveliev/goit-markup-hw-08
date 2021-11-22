@@ -4,16 +4,25 @@
 }
 
 .footer__box {  
-  text-align: center;  
+  text-align: center;
+  
+  @media screen and (min-width: 1200px){
+    text-align: start;
+    margin-right: 70px;
+}
 }
 
-// .footer__container {
-//   display: flex;  
-//   align-items: baseline;
-// }
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 
-
-
-// .footer__box {
-//   margin-right: 70px;
-// }
+  @media screen and (min-width: 1200px) {    
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    align-items: baseline;  
+  }
+}

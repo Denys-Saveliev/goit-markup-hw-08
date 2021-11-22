@@ -3,22 +3,19 @@
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+
+  @media screen and (min-width: 1200px){
+    margin-bottom: 0;
+  }
 }
 
 .contacts__item:not(:last-child) {
   margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px){
+    margin-bottom: 9px;
+  }
 }
-
-// .contacts {
-//   margin-top: 20px;
-//   font-size: 14px;
-//   line-height: 1.71;
-//   font-style: normal;
-// }
-
-// .contacts__item:not(:last-child) {
-//   margin-bottom: 9px;
-// }
 
 .contacts__link {
   color: rgba(255, 255, 255, 0.6);

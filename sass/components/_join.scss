@@ -1,6 +1,5 @@
 .wrapper {
-  display: block;
-  margin-right: 93px;
+  text-align: center;
 }
 
 .wrapper__title {
@@ -8,16 +7,29 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   @include font(700, 14px, 1.14, 0.03em);
-  text-transform: uppercase;
   color: $hero-text-color;
 }
 
 .join {
   @extend %DFlex;
+  margin-bottom: 60px;
 }
 
 .join__item:not(:last-child) {
   margin-right: 10px;
 }
+
+// .wrapper {
+//   display: block;
+//   margin-right: 93px;
+// }
+
+
+
+// .join {
+//   @extend %DFlex;
+// }
+
+
 
 

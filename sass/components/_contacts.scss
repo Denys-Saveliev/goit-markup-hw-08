@@ -1,13 +1,24 @@
 .contacts {
-  margin-top: 20px;
+  margin: 20px 0 60px;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 }
 
 .contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
+
+// .contacts {
+//   margin-top: 20px;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   font-style: normal;
+// }
+
+// .contacts__item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
 
 .contacts__link {
   color: rgba(255, 255, 255, 0.6);

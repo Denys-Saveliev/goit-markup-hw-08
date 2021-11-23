@@ -2,16 +2,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  min-width: 450px;
+  min-height: 609px;
   padding: 40px;
-  width: 530px;
-  height: 580px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: $hero-text-color;
+  background-color: $hero-text-color;   
+}
 
-  .backdrop.is-hidden & {
-    transform:  translate(-50%, -50%) rotate(180deg) scale(1.1);
-  }
+.backdrop.is-hidden .modal {
+  transform:  translate(-50%, -50%) rotate(180deg) scale(1.1);
 }
 
 .modal__btn {

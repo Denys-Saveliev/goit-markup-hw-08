@@ -862,7 +862,7 @@ img {
 @media screen and (max-width: 767px) {
   .modal {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
   }
 }
 

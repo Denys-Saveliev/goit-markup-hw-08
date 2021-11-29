@@ -1,8 +1,12 @@
 .btn {
-  display: block;
-  @include font(700, 16px, 1.87, 0.06em);  
-  border: none;
-  border-radius: 4px;
-  color: $hero-text-color;
-  background-color: $accent-color;
+   display: block;
+   @include font(700, 10px, 1.87, 0.06em);
+   border: none;
+   border-radius: 4px;
+   color: $hero-text-color;
+   background-color: $accent-color;
+
+   @media screen and (min-width: 500px) {
+      @include font(700, 16px, 1.87, 0.06em);
+   }
 }
